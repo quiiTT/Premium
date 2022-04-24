@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Crunchyroll iFrame Player</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="card">
+    <div class="box">
+        <div class="img">
+            <img src="logo.png">
+        </div>
+        <h2>Crunchyroll<br><span>quiT Premium</span></h2>
+        <p>Better then any other site. Enjoy your echi animes bud</p>
+        <input type="checkbox" id="aseguir" name="aseguir" checked>
+        <label for="aseguir"><strong>Autoskip</strong> to the next ep   </label>
+        <br/><br/>
+        Waiting for <input type="number" id="cooldown" style="width: 50px;" min="0" value="5"> seconds.
+        <h3><a href="https://www.youtube.com/channel/UCJnLcyPgMeiifDgFgeN7pCw" target="_blank">YouTube</a><br><span>Better sub bro</span></h3>
+        <h3><a href="https://www.twitch.tv/quiit" target="_blank">Twitch</a><br><span>Follow here haha</span></h3>
+        <span>
+            <ul>
+                <li><a href="https://github.com/mateus7g/crp-iframe-player" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/mateus7g/crp-iframe-player/issues" target="_blank" ><i class="fa fa-font-awesome" aria-hidden="true"></i></a></li>
+            </ul>
+        </span>
+    </div>
+</div>
+</body>
+</html>
+<script src="popup.js"></script>
+<style>
+html {
+    position: relative;
+    min-width: 310px;
+    min-height: 470px;
+    height: 100%;
+    color:#aaaaaa;
+}
+body {
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background:#1f1f1f;
+}
+.card {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:290px;
+    min-height:490px;
+    background:rgb(19, 19, 19);
+    box-shadow:0 20px 50px rgba(255, 255, 255, 0.1);
+    border-radius:10px;
+    transition:0.5s;
+}
+.card:hover {
+    box-shadow:0 30px 70px rgba(255, 255, 255, 0.2);
+}
+.card .box {
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    width:100%;
+}
+.card .box .img {
+    width:120px;
+    height:120px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+}
+.card .box .img img {
+    width:100%;
+    height:100%;
+}
+.card .box h3 {
+    font-size:14px;
+    color:#262626;
+    margin:20px auto;
+}
+.card .box a {
+    font-size:14px;
+    color:#888888;
+    margin:20px auto;
+    text-decoration: none;
+}
+.card .box h3 span {
+    font-size:10px;
+    background:#333333;
+    color:#ffffff;
+    display:inline-block;
+    margin: 3px;
+    padding:4px 10px;
+    border-radius:15px;
+}
+.card .box h2 {
+    font-size:20px;
+    color:#ffffff;
+    margin:20px auto;
+}
+.card .box h2 span {
+    font-size:14px;
+    background:#333333;
+    color:rgb(255, 255, 255);
+    display:inline-block;
+    padding:3px 10px;
+    border-radius:15px;
+}
+.card .box p {
+    color:#888888;
+}
+.card .box span {
+    display:inline-flex;
+}
+.card .box ul {
+    margin:0;
+    padding:0;
+}
+.card .box ul li {
+    list-style:none;
+    float:left;
+}
+.card .box ul li a {
+    display:block;
+    color:rgb(0, 0, 0);
+    margin:0 10px;
+    font-size:20px;
+    transition:0.5s;
+    text-align:center;
+}
+.card .box ul li:hover a {
+    color:#1f1f1f;
+}
+</style>

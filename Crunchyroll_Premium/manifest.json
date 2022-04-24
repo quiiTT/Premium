@@ -1,0 +1,33 @@
+{
+	"name": "quiT Premium",
+	"version": "1.2.5",
+	"description": "Enjoy your Crunchyroll subscribtion that i just gave you. Updates are comming sometimes if the site is updating anything special.",
+	"author": "quiT [reworked]",
+	"icons": { "48": "icon.png" },
+	"browser_action":{
+		"default_title": "quiT Premium",
+		"default_popup": "popup.html",
+		"default_icon": "icon.png"
+	},
+	"permissions": [
+    "webRequest", 
+    "webRequestBlocking",
+    "http://localhost/*",
+    "https://pl.crunchyroll.com/*",
+    "https://www.crunchyroll.com/*",
+    "https://*.mateus7g.github.io/*",
+		"storage"
+  ],
+	"content_scripts": [
+    {
+      "matches": ["https://*.crunchyroll.com/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+	"manifest_version": 2
+}
